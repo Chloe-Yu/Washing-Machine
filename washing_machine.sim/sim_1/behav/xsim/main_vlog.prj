@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../washing_machine.srcs/sources_1/new/alert.v" \
+"../../../../washing_machine.srcs/sources_1/new/change_lights.v" \
+"../../../../../vending_machine/vending_machine.srcs/sources_1/new/disp_time.v" \
+"../../../../../vending_machine/vending_machine.srcs/sources_1/new/divider.v" \
+"../../../../../vending_machine/vending_machine.srcs/sources_1/new/select_mode.v" \
+"../../../../../vending_machine/vending_machine.srcs/sources_1/new/main.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
